@@ -32,8 +32,8 @@ spec:
         - name: WORDPRESS_DB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: wordpress
-              key: wordpress-db-password
+              name: wordpress-secret
+              key: wordpress_db_password
         ports:
         - containerPort: 80
           name: wordpress
